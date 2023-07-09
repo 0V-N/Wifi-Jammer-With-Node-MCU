@@ -14,8 +14,6 @@ To replicate this project, you will need the following components:
 
 - ESP8266 microcontroller (such as NodeMCU or Wemos D1 Mini)
 - USB cable for programming and power supply
-- Arduino IDE (or any other compatible IDE)
-- WiFi library for Arduino
 - Access to a WiFi network for testing
 - ESP8266 Flasher tool
 
@@ -42,7 +40,10 @@ To replicate this project, you will need the following components:
 
 10. Disconnect and reconnect the ESP8266 from the USB cable to reset it.
 
-11. Follow the instructions from the previous section to configure and execute the deauthentication attack.
+11. Connect the ESP8266 with the SSID and Password  ( The password for pwned is deauther )
+
+
+    More Details are in the video - https://www.youtube.com/watch?v=dDzYvKTFfoQ&ab_channel=VNX
 
 ## Usage and Legal Considerations
 
