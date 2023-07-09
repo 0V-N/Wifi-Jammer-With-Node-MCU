@@ -1,10 +1,12 @@
-# WiFi Deauthentication Attack with ESP8266
+# WiFi Deauthentication Attack with ESP8266 and ESP8266 Flasher
 
 ## Overview
 
 This repository provides a detailed explanation and implementation of a WiFi deauthentication attack using the ESP8266 microcontroller. The deauthentication attack is a network security technique that aims to disconnect devices from a wireless network by sending deauthentication packets.
 
-The project includes the necessary code and instructions to set up the ESP8266 as a deauthentication device and execute the attack on vulnerable networks. It is important to note that this project is for educational purposes only and should not be used for any illegal or malicious activities.
+The project includes the necessary code and instructions to set up the ESP8266 as a deauthentication device and execute the attack on vulnerable networks. Additionally, this guide incorporates the use of the ESP8266 Flasher tool, which simplifies the process of flashing firmware onto the ESP8266.
+
+It is important to note that this project is for educational purposes only and should not be used for any illegal or malicious activities.
 
 ## Requirements
 
@@ -15,32 +17,32 @@ To replicate this project, you will need the following components:
 - Arduino IDE (or any other compatible IDE)
 - WiFi library for Arduino
 - Access to a WiFi network for testing
+- ESP8266 Flasher tool
 
-## Installation and Setup
 
-1. Clone or download the project repository from GitHub: [link to repository]
+## Flashing Firmware with ESP8266 Flasher
 
-2. Install the Arduino IDE from the official website: [https://www.arduino.cc/en/software](https://www.arduino.cc/en/software)
+1. Download the ESP8266 Flasher tool from the official repository: [https://github.com/nodemcu/nodemcu-flasher](https://github.com/nodemcu/nodemcu-flasher)
 
-3. Connect the ESP8266 to your computer using the USB cable.
+2. Extract the downloaded ZIP file to a convenient location on your computer.
 
-4. Open the Arduino IDE and install the ESP8266 board package. Go to **File > Preferences** and enter the following URL in the **Additional Boards Manager URLs** field: `http://arduino.esp8266.com/stable/package_esp8266com_index.json`. Then, navigate to **Tools > Board > Boards Manager**, search for "esp8266," and click **Install**.
+3. Launch the ESP8266 Flasher tool.
 
-5. Select the appropriate board model from the **Tools > Board** menu (e.g., NodeMCU 1.0).
+4. Connect the ESP8266 to your computer using the USB cable.
 
-6. Install the WiFi library for Arduino. Go to **Sketch > Include Library > Manage Libraries**, search for "WiFi," and click **Install**.
+5. In the ESP8266 Flasher tool, select the appropriate COM port for the connected ESP8266 device.
 
-7. Open the main project file (e.g., `deauth_attack.ino`) in the Arduino IDE.
+6. Click the **Config** button and browse to the firmware file (`esp8266_deauther.bin`) from the project repository.
 
-8. Configure the attack parameters, such as the target MAC address and the WiFi network SSID, by modifying the values in the code. Make sure to comply with all applicable laws and regulations when conducting any testing.
+7. Adjust other settings if necessary, such as flash size and baud rate.
 
-9. Connect to your WiFi network by providing the SSID and password in the code.
+8. Click the **Flash** button to begin the firmware flashing process.
 
-10. Upload the code to the ESP8266 by clicking the **Upload** button in the Arduino IDE.
+9. Wait for the process to complete, and verify that the flash status shows success.
 
-11. Monitor the serial output for any relevant information or error messages.
+10. Disconnect and reconnect the ESP8266 from the USB cable to reset it.
 
-12. The ESP8266 will begin executing the deauthentication attack on the specified network. Observe the network behavior to see the effect of the attack.
+11. Follow the instructions from the previous section to configure and execute the deauthentication attack.
 
 ## Usage and Legal Considerations
 
